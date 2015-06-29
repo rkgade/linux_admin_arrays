@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+	
+	int i,n,sum=0,x[7];
+	printf("enter number of values");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		x[i]=i+1;
+		sum=sum+x[i];
+	}
+	
+	printf("Sum is : %d . N is : %d . Average is : %f",sum,n,(float)sum/n);
+	
+	
+	return 0;
+}

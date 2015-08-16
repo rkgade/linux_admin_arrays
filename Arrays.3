@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(void) {
+	
+	int i,j,a[5]={11,9,45,87,6};
+	int max,min;
+	// for(i=0;i<5;i++)
+	// {
+	// 	printf("Enter a number:");
+	// 	scanf("%d",&a[i]);
+		
+	// }
+	
+	printf("A is %d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
+	
+	for(i=0;i<5;i++)
+	{
+		if(a[i] > a[i+1])
+		{
+			max=a[i];
+		}
+		else{
+			max=a[i+1];
+		}
+	}
+	for(i=0;i<5;i++)
+	{
+		if(a[i] < a[i+1])
+		{
+			min=a[i];
+		}
+		else{
+			min=a[i+1];
+		}
+	}
+	
+	printf("Max is %d",max);
+	printf("Min is %d",min);
+	
+	return 0;
+}
